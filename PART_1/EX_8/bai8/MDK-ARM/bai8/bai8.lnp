@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"bai8\startup_stm32f103xb.o"
+"bai8\main.o"
+"bai8\stm32f1xx_it.o"
+"bai8\stm32f1xx_hal_msp.o"
+"bai8\stm32f1xx_hal_gpio_ex.o"
+"bai8\stm32f1xx_hal_tim.o"
+"bai8\stm32f1xx_hal_tim_ex.o"
+"bai8\stm32f1xx_hal.o"
+"bai8\stm32f1xx_hal_rcc.o"
+"bai8\stm32f1xx_hal_rcc_ex.o"
+"bai8\stm32f1xx_hal_gpio.o"
+"bai8\stm32f1xx_hal_dma.o"
+"bai8\stm32f1xx_hal_cortex.o"
+"bai8\stm32f1xx_hal_pwr.o"
+"bai8\stm32f1xx_hal_flash.o"
+"bai8\stm32f1xx_hal_flash_ex.o"
+"bai8\stm32f1xx_hal_exti.o"
+"bai8\system_stm32f1xx.o"
+--strict --scatter "bai8\bai8.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "bai8.map" -o bai8\bai8.axf

@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"receive\startup_stm32f103xb.o"
+"receive\main.o"
+"receive\stm32f1xx_it.o"
+"receive\stm32f1xx_hal_msp.o"
+"receive\stm32f1xx_hal_gpio_ex.o"
+"receive\stm32f1xx_hal_tim.o"
+"receive\stm32f1xx_hal_tim_ex.o"
+"receive\stm32f1xx_hal_uart.o"
+"receive\stm32f1xx_hal.o"
+"receive\stm32f1xx_hal_rcc.o"
+"receive\stm32f1xx_hal_rcc_ex.o"
+"receive\stm32f1xx_hal_gpio.o"
+"receive\stm32f1xx_hal_dma.o"
+"receive\stm32f1xx_hal_cortex.o"
+"receive\stm32f1xx_hal_pwr.o"
+"receive\stm32f1xx_hal_flash.o"
+"receive\stm32f1xx_hal_flash_ex.o"
+"receive\stm32f1xx_hal_exti.o"
+"receive\system_stm32f1xx.o"
+--strict --scatter "receive\receive.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "receive.map" -o receive\receive.axf
